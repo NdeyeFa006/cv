@@ -222,9 +222,17 @@ nav a.active {
 .section-image {
   min-height: 380px;
   border-radius: 30px;
-  background: linear-gradient(145deg, rgba(111, 207, 151, 0.22), rgba(122, 107, 255, 0.18));
+  overflow: hidden;
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: var(--shadow);
+  background: linear-gradient(145deg, rgba(214,124,90,0.18), rgba(14,107,102,0.12));
+}
+
+.section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 h2 {
