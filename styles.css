@@ -114,6 +114,18 @@ nav a.active {
   color: var(--primary);
 }
 
+/* Animated name letters */
++.name { display: inline-block; white-space: nowrap; }
++.name .letter { display: inline-block; opacity: 0; transform: translateY(20px); transition: transform 420ms cubic-bezier(.2,.8,.2,1), opacity 420ms ease; }
++.name .letter.visible { opacity: 1; transform: translateY(0); }
++
+/* Nav initial hidden state (JS will stagger reveal) */
+nav a { opacity: 1; transform: translateY(0); }
++
+/* Subtle entrance for profile card */
++.profile-card { transition: transform 600ms cubic-bezier(.2,.8,.2,1), opacity 600ms ease; }
++
+
 .hero p {
   margin: 0 0 1.6rem;
   max-width: 36rem;
